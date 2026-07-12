@@ -1,0 +1,884 @@
+/* ==========================================
+   Aaditya Top Up Centre v5
+   Premium Gaming UI
+========================================== */
+
+:root{
+
+--primary:#2563EB;
+--secondary:#7C3AED;
+
+--white:#ffffff;
+--light:#F8FAFC;
+--dark:#0F172A;
+
+--text:#334155;
+--border:#E2E8F0;
+
+--radius:20px;
+
+--shadow:
+0 10px 30px rgba(37,99,235,.10);
+
+--transition:.35s;
+
+}
+
+*{
+
+margin:0;
+padding:0;
+box-sizing:border-box;
+
+}
+
+html{
+
+scroll-behavior:smooth;
+
+}
+
+body{
+
+font-family:'Poppins',sans-serif;
+
+background:#fff;
+
+color:var(--dark);
+
+overflow-x:hidden;
+
+}
+
+/* Container */
+
+.container{
+
+width:90%;
+
+max-width:1300px;
+
+margin:auto;
+
+}
+
+/* Header */
+
+.header{
+
+position:sticky;
+
+top:0;
+
+width:100%;
+
+background:rgba(255,255,255,.9);
+
+backdrop-filter:blur(18px);
+
+z-index:999;
+
+box-shadow:0 5px 25px rgba(0,0,0,.05);
+
+}
+
+.header .container{
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+padding:18px 0;
+
+}
+
+.logo{
+
+font-size:26px;
+
+font-weight:700;
+
+color:var(--primary);
+
+}
+
+nav ul{
+
+display:flex;
+
+list-style:none;
+
+gap:35px;
+
+}
+
+nav a{
+
+text-decoration:none;
+
+font-weight:500;
+
+color:var(--dark);
+
+transition:.3s;
+
+}
+
+nav a:hover{
+
+color:var(--primary);
+
+}
+
+.header-buttons{
+
+display:flex;
+
+align-items:center;
+
+gap:15px;
+
+}
+
+.login-btn{
+
+background:linear-gradient(135deg,#2563EB,#7C3AED);
+
+color:#fff;
+
+border:none;
+
+padding:12px 26px;
+
+border-radius:50px;
+
+cursor:pointer;
+
+font-weight:600;
+
+}
+
+.search-btn,
+
+.theme-btn{
+
+width:45px;
+
+height:45px;
+
+border-radius:50%;
+
+border:none;
+
+background:#F1F5F9;
+
+cursor:pointer;
+
+font-size:18px;
+
+}
+
+/* Hero */
+
+.hero{
+
+padding:100px 0;
+
+background:linear-gradient(135deg,#2563EB,#7C3AED);
+
+color:#fff;
+
+}
+
+.hero-grid{
+
+display:grid;
+
+grid-template-columns:1fr 1fr;
+
+align-items:center;
+
+gap:60px;
+
+}
+
+.badge{
+
+display:inline-block;
+
+padding:8px 18px;
+
+background:rgba(255,255,255,.15);
+
+border-radius:50px;
+
+margin-bottom:20px;
+
+}
+
+.hero h1{
+
+font-size:58px;
+
+line-height:1.1;
+
+margin-bottom:20px;
+
+}
+
+.hero p{
+
+font-size:20px;
+
+line-height:1.8;
+
+margin-bottom:35px;
+
+max-width:550px;
+
+}
+
+.hero-buttons{
+
+display:flex;
+
+gap:20px;
+
+}
+
+.primary-btn{
+
+padding:16px 34px;
+
+background:#fff;
+
+color:#2563EB;
+
+text-decoration:none;
+
+border-radius:50px;
+
+font-weight:700;
+
+transition:.3s;
+
+}
+
+.primary-btn:hover{
+
+transform:translateY(-4px);
+
+}
+
+.secondary-btn{
+
+padding:16px 34px;
+
+border:2px solid #fff;
+
+color:#fff;
+
+text-decoration:none;
+
+border-radius:50px;
+
+}
+
+.hero-image img{
+
+width:100%;
+
+animation:float 4s infinite ease-in-out;
+
+}
+
+@keyframes float{
+
+50%{
+
+transform:translateY(-15px);
+
+}
+
+}
+/* ===========================
+   Statistics Section
+=========================== */
+
+.stats{
+    padding:80px 0;
+    background:#fff;
+}
+
+.stats .container{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:25px;
+}
+
+.stat-card{
+    background:#fff;
+    border-radius:20px;
+    padding:35px 25px;
+    text-align:center;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+    transition:.35s;
+}
+
+.stat-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 18px 45px rgba(37,99,235,.18);
+}
+
+.stat-card i{
+    font-size:42px;
+    color:#2563EB;
+    margin-bottom:18px;
+}
+
+.stat-card h2{
+    font-size:34px;
+    color:#0F172A;
+    margin-bottom:8px;
+}
+
+.stat-card p{
+    color:#64748B;
+}
+
+/* ===========================
+   Section Title
+=========================== */
+
+.section-title{
+    text-align:center;
+    margin-bottom:60px;
+}
+
+.section-title h2{
+    font-size:42px;
+    color:#0F172A;
+    margin-bottom:12px;
+}
+
+.section-title p{
+    color:#64748B;
+    font-size:18px;
+}
+
+/* ===========================
+   Games Section
+=========================== */
+
+.games{
+    padding:100px 0;
+    background:#F8FAFC;
+}
+
+.games-grid{
+    display:grid;
+    grid-template-columns:repeat(5,1fr);
+    gap:25px;
+}
+
+.game-card{
+    background:#fff;
+    border-radius:20px;
+    overflow:hidden;
+    text-align:center;
+    transition:.35s;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+
+.game-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 20px 45px rgba(37,99,235,.18);
+}
+
+.game-card img{
+    width:100%;
+    height:180px;
+    object-fit:cover;
+}
+
+.game-card h3{
+    padding:20px 10px 10px;
+    font-size:22px;
+}
+
+.game-btn{
+    display:inline-block;
+    margin:20px;
+    padding:12px 28px;
+    border-radius:50px;
+    background:linear-gradient(135deg,#2563EB,#7C3AED);
+    color:#fff;
+    text-decoration:none;
+    font-weight:600;
+}
+
+/* ===========================
+   Latest Offers
+=========================== */
+
+.offers{
+    padding:100px 0;
+}
+
+.offers-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+}
+
+.offer-card{
+    position:relative;
+    background:#fff;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+    transition:.35s;
+}
+
+.offer-card:hover{
+    transform:translateY(-10px);
+}
+
+.offer-card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.offer-card h3{
+    padding:20px 20px 8px;
+}
+
+.offer-card p{
+    padding:0 20px 20px;
+    color:#64748B;
+}
+
+.offer-badge{
+    position:absolute;
+    top:15px;
+    left:15px;
+    color:#fff;
+    padding:6px 14px;
+    border-radius:50px;
+    font-size:13px;
+    font-weight:600;
+}
+
+.hot{
+    background:#EF4444;
+}
+
+.new{
+    background:#10B981;
+}
+
+.popular{
+    background:#7C3AED;
+}
+
+/* ===========================
+   Features
+=========================== */
+
+.features{
+    padding:100px 0;
+    background:#F8FAFC;
+}
+
+.features-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:25px;
+}
+
+.feature-card{
+    background:#fff;
+    border-radius:20px;
+    text-align:center;
+    padding:40px 30px;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+    transition:.35s;
+}
+
+.feature-card:hover{
+    transform:translateY(-10px);
+}
+
+.feature-card i{
+    font-size:50px;
+    color:#2563EB;
+    margin-bottom:20px;
+}
+
+.feature-card h3{
+    margin-bottom:15px;
+}
+
+.feature-card p{
+    color:#64748B;
+    line-height:1.7;
+}
+/* ===========================
+   Reviews
+=========================== */
+
+.reviews{
+    padding:100px 0;
+    background:#fff;
+}
+
+.review-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+}
+
+.review-card{
+    background:#fff;
+    border-radius:20px;
+    padding:30px;
+    text-align:center;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+    transition:.35s;
+}
+
+.review-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 18px 40px rgba(37,99,235,.15);
+}
+
+.review-card img{
+    width:80px;
+    height:80px;
+    border-radius:50%;
+    margin-bottom:15px;
+}
+
+.review-card h4{
+    margin-bottom:8px;
+}
+
+.review-card p{
+    margin-top:12px;
+    color:#64748B;
+    line-height:1.7;
+}
+
+/* ===========================
+   FAQ
+=========================== */
+
+.faq{
+    padding:100px 0;
+    background:#F8FAFC;
+}
+
+.faq-item{
+    background:#fff;
+    border-radius:18px;
+    padding:25px;
+    margin-bottom:20px;
+    box-shadow:0 8px 20px rgba(0,0,0,.06);
+}
+
+.faq-item h3{
+    color:#2563EB;
+    margin-bottom:12px;
+}
+
+.faq-item p{
+    color:#64748B;
+    line-height:1.7;
+}
+
+/* ===========================
+   CTA
+=========================== */
+
+.cta{
+    padding:100px 20px;
+    text-align:center;
+    background:linear-gradient(135deg,#2563EB,#7C3AED);
+    color:#fff;
+}
+
+.cta h2{
+    font-size:48px;
+    margin-bottom:20px;
+}
+
+.cta p{
+    max-width:700px;
+    margin:auto;
+    line-height:1.8;
+    margin-bottom:35px;
+}
+
+/* ===========================
+   Footer
+=========================== */
+
+.footer{
+    background:#0F172A;
+    color:#fff;
+    padding:70px 0 30px;
+}
+
+.footer-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:40px;
+}
+
+.footer h3{
+    margin-bottom:18px;
+}
+
+.footer ul{
+    list-style:none;
+}
+
+.footer ul li{
+    margin:12px 0;
+}
+
+.footer a{
+    color:#CBD5E1;
+    text-decoration:none;
+}
+
+.footer a:hover{
+    color:#fff;
+}
+
+.social-icons{
+    display:flex;
+    gap:15px;
+    margin-top:20px;
+}
+
+.social-icons a{
+    width:42px;
+    height:42px;
+    border-radius:50%;
+    background:#2563EB;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.footer-bottom{
+    text-align:center;
+    margin-top:50px;
+    border-top:1px solid rgba(255,255,255,.1);
+    padding-top:25px;
+}
+
+/* ===========================
+   Floating Buttons
+=========================== */
+
+.whatsapp-btn,
+#backToTop{
+
+    position:fixed;
+
+    right:20px;
+
+    width:60px;
+
+    height:60px;
+
+    border-radius:50%;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    color:#fff;
+
+    text-decoration:none;
+
+    border:none;
+
+    cursor:pointer;
+
+    z-index:999;
+
+    font-size:24px;
+
+}
+
+.whatsapp-btn{
+
+    bottom:95px;
+
+    background:#25D366;
+
+}
+
+#backToTop{
+
+    bottom:20px;
+
+    background:#2563EB;
+
+}
+
+/* ===========================
+   Mobile Bottom Navigation
+=========================== */
+
+.bottom-nav{
+
+display:none;
+
+}
+
+/* ===========================
+   Responsive
+=========================== */
+
+@media(max-width:992px){
+
+.hero-grid,
+.footer-grid,
+.review-grid,
+.games-grid,
+.features-grid,
+.offers-grid,
+.stats .container{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+@media(max-width:768px){
+
+nav{
+
+display:none;
+
+}
+
+.hero{
+
+padding:70px 0;
+
+}
+
+.hero-grid{
+
+grid-template-columns:1fr;
+
+text-align:center;
+
+}
+
+.hero h1{
+
+font-size:42px;
+
+}
+
+.hero-buttons{
+
+justify-content:center;
+
+flex-wrap:wrap;
+
+}
+
+.games-grid,
+.review-grid,
+.features-grid,
+.offers-grid,
+.stats .container{
+
+grid-template-columns:1fr;
+
+}
+
+.footer-grid{
+
+grid-template-columns:1fr;
+
+text-align:center;
+
+}
+
+.social-icons{
+
+justify-content:center;
+
+}
+
+.bottom-nav{
+
+display:flex;
+
+position:fixed;
+
+bottom:0;
+
+left:0;
+
+width:100%;
+
+height:70px;
+
+background:#fff;
+
+justify-content:space-around;
+
+align-items:center;
+
+box-shadow:0 -5px 20px rgba(0,0,0,.08);
+
+border-radius:20px 20px 0 0;
+
+z-index:1000;
+
+}
+
+.bottom-nav a{
+
+text-decoration:none;
+
+color:#64748B;
+
+display:flex;
+
+flex-direction:column;
+
+align-items:center;
+
+font-size:13px;
+
+}
+
+.bottom-nav a.active{
+
+color:#2563EB;
+
+}
+
+body{
+
+padding-bottom:80px;
+
+}
+
+}
